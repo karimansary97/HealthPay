@@ -1,13 +1,14 @@
 import {FC} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
+import Layout from '../../components/Layout';
 
 type HomeProps = {};
 
 const Home: FC<HomeProps> = () => {
   return (
-    <View style={styles.container}>
-      <Text>New Screen Home </Text>
-    </View>
+    <Layout style={styles.container}>
+      <Text>ssss</Text>
+    </Layout>
   );
 };
 
