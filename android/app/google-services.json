@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "865752709645",
+    "project_id": "healthpay-2d30f",
+    "storage_bucket": "healthpay-2d30f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865752709645:android:c6d973326f453693c33344",
+        "android_client_info": {
+          "package_name": "com.healthpay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Qs07XGQmG48UjLvuVSpall87eNwZMdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
