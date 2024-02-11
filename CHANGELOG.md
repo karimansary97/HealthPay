@@ -1,0 +1,2 @@
+- Add Splash screen [#NewFeature](https://github.com/karimansary97/HealthPay/pull/1)
+- Add TodoList [#NewFeature](https://github.com/karimansary97/HealthPay/pull/2)
