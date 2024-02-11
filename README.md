@@ -1,79 +1,134 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+https://github.com/karimansary97/HealthPay/assets/46077002/db241c5f-7073-48c0-afe7-3ae522999dde
+# Todo App 
+### help you to make your todo list 
+
+#Demo
+https://github.com/karimansary97/HealthPay/assets/46077002/eadd10e7-adcb-4627-8109-51e1152514c4
+
+
+## Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+## Step 1: Clone the repo 
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+git clone https://github.com/karimansary97/HealthPay.git
 ```
 
-## Step 2: Start your Application
+## Step 2: install dependencies 
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+# using yarn first step 
+yarn
 ```
 
 ### For iOS
 
 ```bash
-# using npm
-npm run ios
+# step 1
+npx pod-install
 
-# OR using Yarn
+# step 2
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### For Android
+>**Note**: make sure you have jdk more than 17  and config it path in HealthPay/android/gradle.properties and put your jdk path example org.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk-17.jdk/contents/Home
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+https://github.com/karimansary97/HealthPay/assets/46077002/66462f93-e19d-474f-80cd-3515a51d64eb
 
-Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+```bash
+# step 
+yarn android
+```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+### For FireBase 
 
-## Congratulations! :tada:
+>**Note**: Please contact me to give the permission you want to test notifications and you could check the video 
 
-You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### folder and file structure
+```
+.
+├── App.tsx
+├── assets
+│   ├── Close.svg
+│   ├── Splash.svg
+│   ├── add.svg
+│   ├── delete.svg
+│   ├── noTask.svg
+│   ├── plus.svg
+│   └── share.svg
+├── components
+│   ├── Badge
+│   │   ├── Badge.tsx
+│   │   └── index.ts
+│   ├── FloatButton
+│   │   ├── FloatButton.tsx
+│   │   └── index.ts
+│   ├── Layout
+│   │   ├── Header.tsx
+│   │   ├── Layout.style.ts
+│   │   ├── Layout.tsx
+│   │   ├── Layout.type.ts
+│   │   └── index.ts
+│   ├── Text
+│   │   ├── Text.style.ts
+│   │   ├── Text.tsx
+│   │   ├── index.ts
+│   │   └── textTypes.ts
+│   └── TodoList
+│       ├── CheckModal.tsx
+│       ├── ListHeaderComponent.tsx
+│       ├── ListRenderRightIcons.tsx
+│       ├── TodoCard.tsx
+│       ├── TodoList.tsx
+│       └── index.ts
+├── config
+├── helpers
+├── hooks
+│   ├── useFirbaseNotifications.ts
+│   ├── useGetFirebaseDeviceToken.ts
+│   ├── useNavigation.ts
+│   ├── useRoute.ts
+│   └── useTodoList.ts
+├── navigation
+│   ├── MainNavigation.tsx
+│   └── routes.ts
+├── screens
+│   ├── Home
+│   │   ├── Home.tsx
+│   │   └── index.ts
+│   └── TodoDetails
+│       ├── TodoDetails.tsx
+│       └── index.ts
+├── styles
+│   ├── colors.ts
+│   ├── icons.ts
+│   └── unit.ts
+└── types
+    ├── TodoList.type.ts
+    └── global.d.ts
+```
+### Libraries used
+```
+ #react-navigation/native
+ #react-navigation/stack
+ #react-native-firebase/app
+ #react-native-firebase/messaging
+ #notifee/react-native
+ #react-native-bootsplash
+ #react-native-bouncy-checkbox
+ #react-native-gesture-handler
+ #react-native-safe-area-context
+ #react-native-screens
+ #react-native-svg
+ #react-native-uuid
+ #zustand
+```
+ 
