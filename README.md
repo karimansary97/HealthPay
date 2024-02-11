@@ -38,16 +38,14 @@ yarn ios
 ### For Android
 >**Note**: make sure you have jdk more than 17  and config it path in HealthPay/android/gradle.properties and put your jdk path example org.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk-17.jdk/contents/Home
 
-
-https://github.com/karimansary97/HealthPay/assets/46077002/66462f93-e19d-474f-80cd-3515a51d64eb
-
-
 ```bash
 # step 
 yarn android
 ```
 
 ### For FireBase 
+
+https://github.com/karimansary97/HealthPay/assets/46077002/66462f93-e19d-474f-80cd-3515a51d64eb
 
 >**Note**: Please contact me to give the permission you want to test notifications and you could check the video 
 
